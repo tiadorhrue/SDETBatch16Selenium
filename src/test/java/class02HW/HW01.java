@@ -17,6 +17,8 @@ public class HW01 {
         driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Tia");
         driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Rue");
         driver.findElement(By.xpath("//input[@name='reg_email__']")).sendKeys("tia.rue@syntax.com");
+        WebElement reEnterEmail=driver.findElement(By.xpath("//input[contains(@name, 'confirmation__')]")); // 1/1
+        reEnterEmail.sendKeys("tia.rue@syntax.com");
         driver.findElement(By.xpath("//input[@name='reg_passwd__']")).sendKeys("password123");
         driver.findElement(By.xpath("//select[@name='birthday_month']")).sendKeys("August");
         driver.findElement(By.xpath("//select[@name='birthday_day']")).sendKeys("15");
