@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import static Utlis.CommonMethods.driver;
 
 public class HW01 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        CommonMethods.openBrowserAndLaunchApplication("http://practice.syntaxtechs.net/input-form-demo.php");
+        CommonMethods.openBrowserAndLaunchApplication("http://practice.syntaxtechs.net/input-form-demo.php","Edge");
         WebElement firstName = driver.findElement(By.cssSelector("input[name='first_name']"));
         firstName.sendKeys("Tia");
         WebElement lastName = driver.findElement(By.cssSelector("input[name='last_name']"));
@@ -34,8 +34,10 @@ public class HW01 {
         areYouHosting.click();
         WebElement projDesc= driver.findElement(By.cssSelector("textarea[name=comment]"));
         projDesc.sendKeys("The best project you have ever seen!");
-        WebElement send = driver.findElement(By.cssSelector("button[type=submit"));
+        WebElement send = driver.findElement(By.cssSelector("button[type=submit]"));
         send.click();
+        Thread.sleep(4000);
+        CommonMethods.closeBrowser();
 
 
 

@@ -10,7 +10,7 @@ import static Utlis.CommonMethods.driver;
 public class HW02 {
     public static void main(String[] args) throws InterruptedException {
 
-        CommonMethods.openBrowserAndLaunchApplication("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login%E2%80%9D");
+        CommonMethods.openBrowserAndLaunchApplication("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login%E2%80%9D","Edge");
         WebElement userName = driver.findElement(By.cssSelector("input[name=txtUsername"));
         userName.sendKeys("Admin");
         WebElement logIn = driver.findElement(By.cssSelector("input[type=submit]"));
