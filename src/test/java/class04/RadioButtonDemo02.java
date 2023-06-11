@@ -1,10 +1,9 @@
-package Class04;
+package class04;
 
 import Utlis.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import javax.lang.model.util.Elements;
 import java.util.List;
 
 public class RadioButtonDemo02 extends CommonMethods {

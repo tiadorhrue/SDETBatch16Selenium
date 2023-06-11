@@ -1,4 +1,4 @@
-package Class04;
+package class04;
 
 import Utlis.CommonMethods;
 import org.openqa.selenium.By;
