@@ -24,13 +24,13 @@ public class Tables extends CommonMethods {
             WebElement pimBtn = driver.findElement(By.xpath("//a[@id='menu_pim_viewPimModule']"));
             pimBtn.click();
 
-            List<WebElement> findIDs = driver.findElements(By.xpath("//table/tbody/tr/td[2]"));
+            List<WebElement> findIDs = driver.findElements(By.xpath("//table/tbody/tr[2]/td[2]"));
 
 
             for (int i = 0; i < findIDs.size(); i++) {
                 String id= findIDs.get(i).getText();
                 if(id.equals("55804A")){
-                    System.out.println("Id 55804A is in row : "+i);
+                    System.out.println("Id 55804A is in row : "+i+1);
                 }
             }
 

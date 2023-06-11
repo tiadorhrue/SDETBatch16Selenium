@@ -10,6 +10,7 @@ import java.time.Duration;
 
 public class HW01 extends CommonMethods {
     public static void main(String[] args) {
+
         String URL = "http://practice.syntaxtechs.net/dynamic-elements-loading.php";
         String browser= "Edge";
         openBrowserAndLaunchApplication(URL,browser);
@@ -24,16 +25,5 @@ public class HW01 extends CommonMethods {
         WebElement text = driver.findElement(By.xpath("//h4[text()='Welcome Syntax Technologies']"));
         System.out.println(text.getText());
 
-
-
-
-
-
-
-
-
-
-        // for Task 2
-        //p[contains(text(),'First Name')] // use explicit
     }
 }

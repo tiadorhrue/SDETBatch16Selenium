@@ -1,8 +1,7 @@
-package Class03HW;
+package class03HW;
 
 import Utlis.CommonMethods;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import static Utlis.CommonMethods.driver;

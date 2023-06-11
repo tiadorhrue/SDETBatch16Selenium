@@ -1,4 +1,4 @@
-package Class03HW;
+package class03HW;
 
 import Utlis.CommonMethods;
 import org.openqa.selenium.By;
