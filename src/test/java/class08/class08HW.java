@@ -1,12 +1,11 @@
 package class08;
 
-import Utlis.CommonMethods;
+import Utils.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
-import java.util.List;
 
 public class class08HW extends CommonMethods {
     public static void main(String[] args) {
@@ -38,6 +37,30 @@ public class class08HW extends CommonMethods {
         year.click();
         Select selYear = new Select(year);
         selYear.selectByVisibleText("2024");
+
+        WebElement day = driver.findElement(By.xpath("//a[text()='15']"));
+        day.click();
+
+
+        WebElement toCalender = driver.findElement(By.xpath("//input[@id='candidateSearch_toDate']"));
+        toCalender.click();
+
+        WebElement toMonth = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
+        toMonth.click();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        Select selMon = new Select(toMonth);
+        selMon.selectByVisibleText("Aug");
+
+        WebElement toYear = driver.findElement(By.xpath("//select[@class='ui-datepicker-year']"));
+        toYear.click();
+
+        Select selToYear = new Select(toYear);
+        selToYear.selectByVisibleText("2026");
+
+        WebElement toDay = driver.findElement(By.xpath("//a[text()='20']"));
+        toDay.click();
+
 
 
 //
